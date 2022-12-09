@@ -1,0 +1,78 @@
+// ui
+@import 'ui/_vars';
+@import 'ui/_fonts';
+@import 'ui/_icons';
+@import 'ui/titles';
+
+// blocks  
+@import 'blocks/_header';
+@import 'blocks/_footer';
+@import 'blocks/_hero';
+@import 'blocks/_company-features';
+@import 'blocks/_features';
+@import 'blocks/_order';
+
+html {
+    height: 100%;
+}
+
+body { 
+    overflow-x: hidden;
+    margin: 0;
+    padding-top: 248px;
+    font-family: $font_main;
+    color: $color_black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    position: relative;
+
+    &.is-homepage {
+        padding-top: 0; 
+
+        footer:after {
+            display: none;
+        }
+    }
+
+    @media (max-width: 992px) {
+        padding-top: 148px;
+    }
+
+    @media (max-width: 767px) {
+        padding-top: 136px;
+    }
+}
+
+img {
+    max-width: 100%;
+} 
+   
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: #333;
+}
+
+.container {
+    max-width: 1196px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+    [data-aos-delay] {
+        transition-delay: 0s !important;
+    }
+}
+
+.inner-page {
+    margin-top: 80px;
+
+    @media (max-width: 767px) {
+        margin-top: 32px;
+    }
+}

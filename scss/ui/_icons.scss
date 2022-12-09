@@ -1,0 +1,29 @@
+.icon {
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-flex;
+
+    &--quality {
+        background-image: url('../img/i_quality.svg');
+        width: 48px;
+        height: 48px;
+    }
+
+    &--individual {
+        background-image: url('../img/i_individual.svg');
+        width: 56px;
+        height: 43px;
+    }
+
+    &--star {
+        background-image: url('../img/i_star.svg'); 
+        width: 48px;
+        height: 48px;
+    }
+
+    &--audit {
+        background-image: url('../img/i_audit.svg'); 
+        width: 38px;
+        height: 48px;
+    }
+}

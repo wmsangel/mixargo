@@ -1,0 +1,78 @@
+.section__order {
+    .container {
+        max-width: 1392px;
+    }
+}
+
+.order {
+    margin: 160px 0 128px;
+    background: url('../img/mixargo-big.svg') $color_green no-repeat center;
+    background-size: contain;
+    border-radius: 32px;
+    padding: 32px 118px;
+    display: flex;
+    align-items: center;
+ 
+    &__text {
+        color: $color_white;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 1.3;
+        
+        @media (max-width: 992px) {
+            font-size: 32px;
+            br {
+                display: none;
+            }
+        }
+
+        @media (max-width: 767px) {
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+    }
+
+    &__btn {
+        margin-left: auto;
+        background: $color_orange;
+        width: 192px;
+        min-width: 192px;
+        height: 192px;
+        font-weight: 600;
+        font-size: 24px;
+        text-decoration: none;
+        border-radius: 100%;
+        color: $color_white;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            background: #ff8533;
+            transform: scale(1.03);
+        }
+
+        @media (max-width: 767px) {
+            margin: 0 auto;
+            width: 120px;
+            min-width: 120px;
+            height: 120px;
+            font-size: 18px;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        padding: 32px;   
+    }
+
+    @media (max-width: 767px) {
+        flex-direction: column;
+        background-size: cover;
+        padding: 48px 32px;
+        margin: 96px 0;
+        border-radius: 12px;
+    }
+} 
